@@ -12,9 +12,10 @@ read_sql <- function (FUN = con_ob(), file) {
   file <- readr::read_file(file)
   qry <- DBI::dbSendQuery(FUN, file)
   df <- DBI::dbFetch(qry)
+  df <- df %>% janitor::clean_names()
   DBI::dbClearResult(qry)
 
-return(df)
+  return(df)
 
 }
 
@@ -34,6 +35,7 @@ read_sql_params <- function (FUN = con_ob(), file, list) {
   qry <- DBI::dbSendQuery(FUN, file)
   qry <- DBI::dbBind(qry, list)
   df <- DBI::dbFetch(qry)
+  df <- df %>% janitor::clean_names()
   DBI::dbClearResult(qry)
 
   return(df)
