@@ -1,0 +1,16 @@
+Package: ccconnectr
+Type: Package
+Title: Make Connecting to CCC Databases and Reading in SQL Files Easier
+Version: 0.1.0
+Authors@R:
+    person("Whitney M.", "Marks", email = "wmmarks10@gmail.com", role = c("aut", "cre"))
+Maintainer: The package maintainer <wmmarks10@gmail.com>
+Description: Connect to CCC databases, OpenBook and Campus Solutions, using short function.
+    Make reading in sql files and outputing a dataframe a short line of code.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: 
+    odbc,
+    DBI
