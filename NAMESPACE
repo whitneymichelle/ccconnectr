@@ -2,3 +2,5 @@
 
 export(con_cs)
 export(con_ob)
+export(read_sql)
+export(read_sql_params)
