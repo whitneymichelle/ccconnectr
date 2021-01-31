@@ -15,4 +15,5 @@ Imports:
     odbc,
     DBI,
     readr,
-    janitor
+    janitor,
+    magrittr

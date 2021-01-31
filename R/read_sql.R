@@ -2,7 +2,7 @@
 #'
 #' @param FUN name of function used to connect to database, con_ob() or con_cs()
 #' @param file sql file name to be read in
-#'
+#' @importFrom magrittr %>%
 #' @return
 #' @export
 #'
@@ -24,7 +24,7 @@ read_sql <- function (FUN = con_ob(), file) {
 #' @param FUN name of function used to connect to database, con_ob() or con_cs()
 #' @param file sql file name to be read in
 #' @param list list of parameters that are in the SQL code, may need use of paste for list (list <- list(paste(param), paste(param)))
-#'
+#' @importFrom magrittr %>%
 #' @return
 #' @export
 #'
